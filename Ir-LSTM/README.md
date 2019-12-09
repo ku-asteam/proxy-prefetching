@@ -1,21 +1,26 @@
-# Intentionality-related Deep Learning method in Web Prefetching
+# Intentionality-related Long Short term memory (Ir-LSTM)
 
-This study develops an intentionality-related long short-term memory (Ir-LSTM) model as a prediction method.
+Ir-LSTM is an intentionality-related prediction model based on deep learning method in web prefetching.
+
+## Introduction
+
+`RNN_pytorch.py`
+
+- Web requests analysis from time serires data set
+- generating prefetching sequences using LSTM and SoftMax function
+- Providing vizulization to show the heat map of 2 variables
+- Testing all the possible results in different threshold and different number of targets
 
 # Requirements
 
-All functions run in a Python3 environment.
-Libraries: Gensim, numpy, Pytorch, matplotlib, BloomFilter, CountMinSketch
+* *Unix-based operating systems
+* Python3
+* Libraries: `Gensim`, `numpy`, and `Pytorch`
+* The visualizing part are supported by `matplotlib`
 
-* Tips: If import errors happen, just use the pip3 to install the corresponding lib*
+  *Tips: If import errors happen, just use the pip3 to install the corresponding lib*
 
-#### Files
+## Instruction
 
-`RNN_pytorch` : Key funcitons are provided here:
-
-- Run **visiual()** to show the heat map of 2 variables
-- Run **simulation()** to show the loading condition in a stream simulation.
-- Run **testing _3D_model()**  to test all the possible results in different threshold and num of targets then save the result in a 3d matrix file
-- Run **testing()**  to test all the possible results in different threshold and num of targets
-- Run **training()** to train the Ir-LSTM model.
-- Run **streaming_testing()** to test the models performance in a stream environment.
+* How to run
+    1. `python RNN_pytorch.py`
